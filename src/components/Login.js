@@ -23,7 +23,13 @@ const Login = () => {
   const config = {
     products: [Products.oauth],
     oauthOptions: {
-      providers: [{ type: "google", one_tap: true, position: "floating" }],
+      providers: [
+        { type: "google", one_tap: true, position: "floating" },
+        { type: "apple" },
+        { type: "facebook" },
+        { type: "discord" },
+        { type: "twitter" },
+      ],
     },
   };
 
