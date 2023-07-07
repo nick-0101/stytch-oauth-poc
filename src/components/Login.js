@@ -21,19 +21,9 @@ const Login = () => {
     },
   };
   const config = {
-    products: [Products.emailMagicLinks, Products.oauth],
-    emailMagicLinksOptions: {
-      loginRedirectURL: "http://localhost:3000",
-      loginExpirationMinutes: 60,
-      signupRedirectURL: "http://localhost:3000",
-      signupExpirationMinutes: 60,
-    },
+    products: [Products.oauth],
     oauthOptions: {
-      providers: [{ type: "google" }],
-      loginRedirectURL: "http://localhost:3000",
-      loginExpirationMinutes: 60,
-      signupRedirectURL: "http://localhost:3000",
-      signupExpirationMinutes: 60,
+      providers: [{ type: "google", one_tap: true, position: "floating" }],
     },
   };
 
